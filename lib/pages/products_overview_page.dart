@@ -11,6 +11,7 @@ class ProductsOverviewPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color.fromARGB(255, 243, 220, 255),
       appBar: AppBar(
         centerTitle: true,
         title: const Text(
