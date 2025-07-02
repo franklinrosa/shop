@@ -26,7 +26,7 @@ class _ProductsOverviewPageState extends State<ProductsOverviewPage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: const Text('Minha Loja'),
+        title: const Text('👷‍♂️Predero Store'),
         actions: [
           PopupMenuButton(
             icon: const Icon(Icons.more_vert),
@@ -55,7 +55,9 @@ class _ProductsOverviewPageState extends State<ProductsOverviewPage> {
               onPressed: () {
                 Navigator.of(context).pushNamed(AppRoutes.cart);
               },
-              icon: const Icon(Icons.shopping_cart),
+              icon: const Icon(
+                Icons.shopping_cart,
+              ),
             ),
             builder: (ctx, cart, child) => Badgee(
               value: cart.itemsCount.toString(),

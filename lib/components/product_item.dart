@@ -16,30 +16,38 @@ class ProductItem extends StatelessWidget {
     final cart = Provider.of<Cart>(context, listen: false);
 
     return ClipRRect(
-      borderRadius: BorderRadius.circular(10),
+      borderRadius: BorderRadius.circular(12),
       child: GridTile(
         footer: GridTileBar(
           backgroundColor: Colors.black54,
           leading: Consumer<Product>(
             builder: (ctx, product, _) => IconButton(
+              alignment: Alignment.centerLeft,
               onPressed: () {
                 product.toggleFavorite();
               },
               icon: Icon(
-                  product.isFavorite ? Icons.favorite : Icons.favorite_border),
+                product.isFavorite ? Icons.favorite : Icons.favorite_border,
+                size: 16,
+              ),
               color: Theme.of(context).colorScheme.secondary,
             ),
           ),
           title: Text(
+            style: const TextStyle(fontSize: 13),
             product.name,
             textAlign: TextAlign.center,
           ),
           trailing: IconButton(
+            alignment: Alignment.centerRight,
             onPressed: () {
               cart.addItem(product);
               //     print(cart.itemsCount);
             },
-            icon: const Icon(Icons.shopping_cart),
+            icon: const Icon(
+              Icons.shopping_cart,
+              size: 16,
+            ),
             color: Theme.of(context).colorScheme.secondary,
           ),
         ),

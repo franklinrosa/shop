@@ -14,7 +14,7 @@ class CartPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Carrinho'),
+        title: const Text('Carrinho 🛒'),
       ),
       body: Column(
         children: [

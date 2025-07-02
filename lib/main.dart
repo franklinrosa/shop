@@ -31,12 +31,13 @@ class MyApp extends StatelessWidget {
         ),
       ],
       child: MaterialApp(
-        title: 'Minha Loja',
+        title: 'Predero Store',
         theme: ThemeData(
           colorScheme: ColorScheme.fromSwatch().copyWith(
-            primary: Colors.purple,
+            primary: const Color.fromARGB(255, 74, 92, 100),
             secondary: Colors.deepOrange,
           ),
+          scaffoldBackgroundColor: const Color.fromARGB(255, 240, 240, 240),
           useMaterial3: false,
           fontFamily: 'Lato',
         ),
