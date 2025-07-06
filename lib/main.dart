@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
         ),
       ],
       child: MaterialApp(
-        title: 'Predero Store',
+        title: 'Minha Loja',
         theme: ThemeData(
           colorScheme: ColorScheme.fromSwatch().copyWith(
             primary: const Color.fromARGB(255, 74, 92, 100),
